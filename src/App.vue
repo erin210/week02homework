@@ -383,7 +383,7 @@ const saveField = async (id, index) => {
             </label>
 
             <div class="editBox" v-else>
-              <input type="text" v-model="editField" />
+              <input type="text" v-model="editField" :placeholder="list.content" />
               {{ editField }}
               <button
                 type="button"
